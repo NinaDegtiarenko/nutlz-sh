@@ -1,3 +1,23 @@
-import { products, contacts, about, aboutText, omegaInfo } from './dummy-data';
+import { bars, contacts, omegaInfo, about, aboutText } from './dummy-data';
 
-export { products, contacts, about, aboutText, omegaInfo };
+export const fetchBarsApi = async () => {
+	return new Promise(resolve => {
+		resolve(bars);
+	});
+};
+export const fetchContactsApi = async () => {
+	return new Promise(resolve => {
+		resolve(contacts);
+	});
+};
+export const fetchOmegaApi = async () => {
+	return new Promise(resolve => {
+		resolve(omegaInfo);
+	});
+};
+
+export const fetchGlobalData = async () => {
+	return new Promise(resolve => {
+		resolve(about, aboutText);
+	});
+};

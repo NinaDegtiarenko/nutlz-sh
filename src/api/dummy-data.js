@@ -1,4 +1,4 @@
-export const products = [
+export const bars = [
 	{
 		id: 1,
 		title: 'NUTLZ SPORT',

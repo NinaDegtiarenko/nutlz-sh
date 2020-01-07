@@ -1,5 +1,6 @@
 import React from 'react';
-import { ProductAdd } from '../product';
+import { ProductAdd } from '../product-actions';
+import PropTypes from 'prop-types';
 
 const Slide = props => {
 	const { video } = props;
@@ -29,6 +30,10 @@ const Slide = props => {
 			</div>
 		</div>
 	);
+};
+
+Slide.protoTypes = {
+	props: PropTypes.object.isRequired
 };
 
 export default Slide;

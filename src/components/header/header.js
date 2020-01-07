@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-	Link as AnchorLink,
-	animateScroll as scroll,
-	Events,
-	scrollSpy,
-	scroller
-} from 'react-scroll';
+import { Link as AnchorLink, Events, scrollSpy } from 'react-scroll';
 import Logo from '../../assets/svg/logo.svg';
 import { ReactComponent as Basket } from '../../assets/svg/basket.svg';
 
