@@ -1,0 +1,36 @@
+$color-text: #222 !default;
+
+$color-primary: #fcdf91 !default;
+$color-secondary: #cfe4ba !default;
+$color-white: #fff !default;
+$color-gray: #e0e0e0 !default;
+$color-blue: #abd6e0 !default;
+$color-light-green: #c5e0c9 !default;
+$color-dark: #343a40 !default;
+$color-black: #000 !default;
+$color-success: #00b300 !default;
+$color-red: #dc0000 !default;
+$color-error: #c00 !default;
+
+$colors: (
+	'default': $color-text,
+	'primary': $color-primary,
+	'secondary': $color-secondary,
+	'white': $color-white,
+	'gray': $color-gray,
+	'blue': $color-blue,
+	'light-green': $color-light-green,
+	'dark': $color-dark,
+	'black': $color-black,
+	'success': $color-success,
+	'red': $color-red,
+	'error': $color-error
+) !default;
+
+$transition-base: all 0.35s ease-in-out !default;
+$transition-dif: all 0.2s ease-in-out !default;
+
+$font-light: 'Oswald Light';
+$font-regular: 'Oswald Regular';
+$font-medium: 'Oswald Medium';
+$font-bold: 'Oswald Semi-Bold';

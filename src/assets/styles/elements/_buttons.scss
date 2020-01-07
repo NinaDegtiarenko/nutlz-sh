@@ -1,0 +1,135 @@
+.btn {
+	display: inline-block;
+	// padding: $btn-padding-y $btn-padding-x;
+	// border: $btn-border-width solid transparent;
+	// background-color: $btn-color-bg;
+	// color: $btn-color-text;
+	// vertical-align: middle;
+	// text-align: center;
+	// white-space: nowrap;
+	// font-size: $btn-font-size;
+	// font-weight: $btn-font-weight;
+	// line-height: $line-height-base;
+	// cursor: pointer;
+	// transition: $transition-base;
+	// user-select: none;
+	// text-decoration: none;
+	// border-radius: $btn-border-radius;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+	&:hover {
+		// background-color: $btn-color-bg-hover;
+		// color: $btn-color-text-hover;
+		// border-color: $btn-border-color-hover;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+// Size Variants
+// .btn-sm {
+// 	font-size: $btn-font-size * $btn-sm;
+// 	padding: ($btn-padding-y * $btn-sm) ($btn-padding-x * $btn-sm);
+// }
+// .btn-lg {
+// 	font-size: $btn-font-size * $btn-lg;
+// 	padding: ($btn-padding-y * $btn-lg) ($btn-padding-x * $btn-lg);
+// }
+button {
+	cursor: pointer;
+	border: none;
+	outeline: none;
+	box-shadow: none;
+}
+// Block
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+// Disabled
+.btn:disabled {
+	opacity: 0.65;
+	pointer-events: none;
+}
+
+// Outline
+// .btn-outline {
+// 	border-color: $btn-color-bg;
+// 	background-color: transparent;
+// 	color: $btn-color-bg;
+// 	&:hover {
+// 		border-color: $btn-color-bg;
+// 		background-color: $btn-color-bg;
+// 		color: $btn-color-text-hover;
+// 	}
+// }
+.btn-skew {
+	transform: skew(-10deg);
+	border-radius: 5px;
+
+	div {
+		width: 1em;
+		height: 1em;
+		position: relative;
+		transform: skew(10deg);
+	}
+	span {
+		display: block;
+		position: relative;
+		transform: skew(10deg);
+	}
+}
+.btn-add {
+	width: 189px;
+	height: 60px;
+	padding: 3px;
+	border-radius: 5px;
+	border: 1px solid $color-red;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		@include pseudo;
+		width: 173px;
+		height: 46px;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.7);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: $transition-base;
+		z-index: 0;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	span {
+		font-family: $font-medium;
+		font-size: 16px;
+		color: $color-red;
+	}
+}
+// Link
+.btn-link {
+	box-shadow: none;
+	background-color: transparent;
+	border-color: transparent;
+	color: $color-primary;
+	text-shadow: none;
+	text-transform: none;
+
+	&:hover {
+		// border-color: $btn-color-bg;
+		background-color: transparent;
+		// color: $btn-color-bg-hover;
+	}
+}

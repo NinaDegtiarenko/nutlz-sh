@@ -1,0 +1,26 @@
+main {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding-top: 150px;
+	background-color: $color-primary;
+}
+.container {
+	max-width: 1260px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0px 30px;
+}
+.flex {
+	&-container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@extend .container;
+	}
+
+	&-spacebetween {
+		justify-content: space-between;
+	}
+}

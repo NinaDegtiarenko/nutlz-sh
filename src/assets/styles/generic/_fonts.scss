@@ -1,0 +1,32 @@
+@include font-face(
+	'Oswald Light',
+	'../../fonts/Light/Oswald-Light',
+	'lighter',
+	'normal',
+	'swap',
+	'woff'
+);
+@include font-face(
+	'Oswald Medium',
+	'../../fonts/Medium/Oswald-Medium',
+	'medium',
+	'normal',
+	'swap',
+	'woff'
+);
+@include font-face(
+	'Oswald Regular',
+	'../../fonts/Regular/Oswald-Regular',
+	'normal',
+	'normal',
+	'swap',
+	'woff'
+);
+@include font-face(
+	'Oswald Semi-Bold',
+	'../../fonts/Semi-Bold/Oswald-SemiBold',
+	'bold',
+	'normal',
+	'swap',
+	'woff'
+);
